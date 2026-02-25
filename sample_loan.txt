@@ -1,0 +1,5 @@
+Revenue: 5000000
+EBITDA: 1200000
+Debt: 2000000
+Equity: 3000000
+Interest: 200000
