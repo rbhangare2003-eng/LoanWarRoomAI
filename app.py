@@ -144,7 +144,11 @@ st.sidebar.title("⚙ Admin Controls")
 if st.sidebar.button("Reset Loan History Database"):
     reset_db()
     st.sidebar.success("Database cleared successfully!")
+st.sidebar.title("Admin Controls")
 
+if st.sidebar.button("Delete Loan History"):
+    reset_db()
+    st.sidebar.success("Loan history deleted successfully")
 
 # -------------------------------------------------
 # FILE UPLOAD
