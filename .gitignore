@@ -1,0 +1,17 @@
+loanenv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+*.log
+.env
+.DS_Store
+sample_loan.pdf
+sample_loan.txt
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.pdf
