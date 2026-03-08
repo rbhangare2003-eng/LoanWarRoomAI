@@ -2,13 +2,13 @@ def evaluate_sales(metrics):
     decision = "APPROVE"
     arguments = []
 
-    revenue = metrics.get("Revenue")
-    ebitda = metrics.get("EBITDA")
+    revenue = metrics.get("Revenue", 0)
+    ebitda = metrics.get("EBITDA", 0)
 
-    if revenue and revenue > 1000000:
+    if revenue > 1000000:
         arguments.append("Strong revenue base")
 
-    if ebitda and ebitda > 0:
+    if ebitda > 0:
         arguments.append("Positive operating profitability")
 
     if not arguments:

@@ -2,8 +2,7 @@ def evaluate_compliance(metrics):
     flags = []
     decision = "CLEAR"
 
-    # Simple AML simulation logic
-    if metrics.get("Revenue") and metrics["Revenue"] < 100000:
+    if metrics.get("Revenue", 0) < 100000:
         decision = "BLOCK"
         flags.append("Suspiciously low declared revenue")
 
